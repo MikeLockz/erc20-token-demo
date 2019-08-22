@@ -5,9 +5,9 @@ contract RimbleToken is ERC20 {
   string public name = "RimbleToken";
   string public symbol = "RMBL";
   uint8 public decimals = 18;
-  uint public INITIAL_SUPPLY = 10000;
+  uint public INITIAL_SUPPLY = 10000000;
 
   constructor() public {
-    _mint(msg.sender, 1000);
+    _mint(msg.sender, INITIAL_SUPPLY);
   }
 }
